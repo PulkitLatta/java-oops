@@ -19,10 +19,10 @@ public class Main {
             Scanner scanner=new Scanner(System.in);
             Showroom showroom[]=new Showroom[5];
             Car car[]=new Car[5];
-            Emploeey emploeey[]=new Emploeey[5];
+            Employee employee[]=new Employee[5];
             int carCounter=0;
             int showroomCounter=0;
-            int emploeeyCounter=0;
+            int employeeCounter=0;
             int count =100;
             while(count!=0){
                 mainMenu();
@@ -40,9 +40,9 @@ public class Main {
                                     count= scanner.nextInt();
                                     break;
                                 case 2:
-                                    emploeey[emploeeyCounter] = new Emploeey();
-                                    emploeey[emploeeyCounter].setdetails();
-                                    emploeeyCounter++;
+                                    employee[employeeCounter] = new Employee();
+                                    employee[employeeCounter].setdetails();
+                                    employeeCounter++;
                                     System.out.println();
                                     System.out.println("2].ADD NEW EMPLOYEE");
                                     System.out.println("9].GO BACK TO MAIN MENU");
@@ -69,8 +69,8 @@ public class Main {
                                     count = scanner.nextInt();
                                     break;
                                 case 5:
-                                    for (int i = 0; i < emploeeyCounter; i++) {
-                                        emploeey[i].getdetails();
+                                    for (int i = 0; i < employeeCounter; i++) {
+                                        employee[i].getdetails();
                                         System.out.println();
                                         System.out.println();
                                     }

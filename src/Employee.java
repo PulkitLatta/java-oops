@@ -1,18 +1,18 @@
 import java.util.Scanner;
 import java.util.UUID;
 
-public class Emploeey extends Showroom implements details{
-    String emploeeyName;
-    String emploeeyDepartment;
-    String emploeeyID;
-    int emploeeyAge;
+public class Employee extends Showroom implements details{
+    String employeeName;
+    String employeeDepartment;
+    String employeeID;
+    int employeeAge;
 
     @Override
     public void getdetails() {
-        System.out.println("ID "+emploeeyID);
-        System.out.println("Name "+ emploeeyName);
-        System.out.println("Age "+emploeeyAge);
-        System.out.println("Dpartment "+emploeeyDepartment);
+        System.out.println("ID "+employeeID);
+        System.out.println("Name "+ employeeName);
+        System.out.println("Age "+employeeAge);
+        System.out.println("Dpartment "+employeeDepartment);
         System.out.println("Showroom Name "+ showroomName);
     }
 
@@ -20,16 +20,16 @@ public class Emploeey extends Showroom implements details{
     public void setdetails() {
         Scanner sc = new Scanner(System.in);
         UUID uuid = UUID.randomUUID();
-        emploeeyID = String.valueOf(uuid);
+        employeeID = String.valueOf(uuid);
         System.out.println("======================= *** ENTER EMPLOYEE DETAILS *** =======================");
         System.out.println();
         System.out.print("EMPLOYEE NAME: ");
-        emploeeyName = sc.nextLine();
+        employeeName = sc.nextLine();
         System.out.print(("EMPLOYEE AGE: "));
-        emploeeyAge = sc.nextInt();
+        employeeAge = sc.nextInt();
         sc.nextLine();
         System.out.print("EMPLOYEE DEPARTMENT: ");
-        emploeeyDepartment = sc.nextLine();
+        employeeDepartment = sc.nextLine();
         System.out.print("SHOWROOM NAME: ");
         showroomName = sc.nextLine();
     }

@@ -4,7 +4,7 @@ public class Showroom implements details{
     String showroomName;
     String showroomAddress;
     String managerName;
-    int employees;
+    int employee;
     int cars=0;
     Scanner scanner =new Scanner(System.in);
 
@@ -13,7 +13,7 @@ public class Showroom implements details{
         System.out.println("Showroom Name "+ showroomName);
         System.out.println("Showroom Address "+ showroomAddress);
         System.out.println("Manager Name "+managerName);
-        System.out.println("Total Employees "+employees);
+        System.out.println("Total Employees "+employee);
         System.out.println("Total Cars In Stoke "+cars);
 
     }
@@ -30,7 +30,7 @@ public class Showroom implements details{
         System.out.print("MANAGER NAME: ");
         managerName = sc.nextLine();
         System.out.print("TOTAL NO OF EMPLOYEES: ");
-        employees = sc.nextInt();
+        employee = sc.nextInt();
         System.out.print("TOTAL CARS IN STOCK: ");
         cars = sc.nextInt();
 
